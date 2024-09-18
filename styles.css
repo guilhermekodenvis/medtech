@@ -1,0 +1,171 @@
+/* Importa as fontes "Poppins" e "Quantico" do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Zera as margens e paddings padrão de todos os elementos e define fontes padrão */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-size: 20px;
+  font-family: "Poppins";
+}
+
+/* Estiliza o cabeçalho para ocupar toda a largura e define altura fixa */
+header {
+  width: 100%;
+  height: 120px;
+
+  /* Utiliza flexbox para alinhar itens no cabeçalho */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+  background-color: #8aead9;
+}
+
+/* Remove estilos padrão da lista e alinha os itens horizontalmente */
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Alinha logo e título da empresa lado a lado */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Aplica fonte e tamanho específicos ao título da logo */
+.logo .logo-title {
+  font-family: "Quantico";
+  font-size: 52px;
+}
+
+/* Estiliza botões padrão */
+button {
+  border: none;
+  background: #045345;
+  width: fit-content;
+  height: fit-content;
+
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Faz o banner ocupar toda a largura disponível */
+main .banner {
+  width: 100%;
+}
+
+/* Estiliza títulos de nível 2 */
+h2 {
+  font-family: "Quantico";
+  font-size: 32px;
+  text-align: center;
+  margin: 48px auto;
+}
+
+/* Estiliza a seção "Quem somos" com flexbox e cor de fundo */
+.conteudo-quem-somos {
+  width: 100%;
+  display: flex;
+  background: #045345;
+}
+
+/* Evita que a imagem encolha e mantém tamanho automático */
+.conteudo-quem-somos img {
+  flex-shrink: 0;
+  min-width: fit-content;
+  width: auto;
+  height: auto;
+}
+
+/* Estiliza o texto na seção "Quem somos" */
+.conteudo-quem-somos p {
+  padding: 72px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+/* Alinha os cartões de produtos no centro com espaçamento */
+.secao-produtos .conteudo-produtos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Estiliza cada cartão de produto */
+.card-produto {
+  background: #045345;
+  width: 321px;
+  border-radius: 16px;
+}
+
+/* Estiliza o texto dentro dos cartões de produto */
+.card-produto p {
+  padding: 40px;
+  color: white;
+}
+
+/* Estiliza a área de contato com cor de fundo e padding */
+.conteudo-contato {
+  width: 100%;
+  background: #8aead9;
+  padding: 48px;
+}
+
+/* Centraliza o conteúdo do contato */
+.secao-contato .conteudo-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estiliza o formulário de contato */
+.secao-contato .conteudo-contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Alinha o botão de enviar à direita */
+.secao-contato .conteudo-contato form button {
+  margin-left: auto;
+}
+
+/* Estiliza os grupos de inputs do formulário */
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+/* Adiciona padding ao label dos inputs */
+.grupo-input label {
+  padding-left: 16px;
+}
+
+/* Estiliza o rodapé centralizando o conteúdo */
+footer {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estiliza campos de input e textarea */
+input,
+textarea {
+  border: 2px solid #045345;
+  border-radius: 8px;
+  padding: 8px;
+}

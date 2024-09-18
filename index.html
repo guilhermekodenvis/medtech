@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedTech</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho da página -->
+    <header>
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo da empresa MedTech." />
+        <span class="logo-title">MedTech</span>
+      </div>
+      <ul>
+        <li>Início</li>
+        <li>Quem somos</li>
+        <li>Produtos</li>
+        <li>Contato</li>
+      </ul>
+      <button class="botao-primario">Enviar mensagem</button>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Banner principal -->
+      <img
+        src="assets/images/banner.png"
+        alt="Banner ilustrativo da empresa."
+        class="banner"
+      />
+
+      <!-- Seção "Quem somos" -->
+      <section class="secao-quem-somos">
+        <h2>Quem somos</h2>
+        <div class="conteudo-quem-somos">
+          <img
+            src="assets/images/quem-somos.png"
+            alt="Imagem de medicamentos ilustrativa."
+          />
+          <p>
+            A MedTech é hoje a maior empresa de tecnologia para o setor
+            medicinal. Contamos com centenas de redes de distribuição de
+            medicamentos cadastrados para encontrarmos sempre as melhores
+            ofertas perto de você. Temos dezenas de milhares de médicos usando
+            nossos sistemas e aplicativos. Com a MedTech você pode ser atendido
+            em qualquer consultório cadastrado e você terá o histórico de todas
+            as suas consultas. Comece hoje mesmo a utilizar a MedTech e tenha
+            muito mais saúde.
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção "Produtos" -->
+      <section class="secao-produtos">
+        <h2>Produtos</h2>
+        <div class="conteudo-produtos">
+          <div class="card-produto">
+            <img
+              src="assets/images/produto-1.png"
+              alt="Um médico mexendo no tablet."
+            />
+            <p>
+              Sistemas de tablet e celular para um atendimento mais qualificado.
+            </p>
+          </div>
+          <div class="card-produto">
+            <img
+              src="assets/images/produto-2.png"
+              alt="Uma senhora internada mexendo no celular."
+            />
+            <p>Aplicativo no celular do paciente para acompanhamento remoto</p>
+          </div>
+          <div class="card-produto">
+            <img
+              src="assets/images/produto-3.png"
+              alt="Uma imagem ilustrando o poder da conexão através da MedTech."
+            />
+            <p>A maior rede de farmácias cadastradas para os melhores preços</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção "Contato" -->
+      <section class="secao-contato">
+        <h2>Contato</h2>
+        <div class="conteudo-contato">
+          <form action="">
+            <div class="grupo-input">
+              <label for="nome">Seu nome:</label>
+              <input type="text" name="nome" id="nome" />
+            </div>
+            <div class="grupo-input">
+              <label for="email">Seu melhor e-mail:</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="grupo-input">
+              <label for="mensagem">Sua mensagem:</label>
+              <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+            </div>
+            <button>Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+      <p>© 2024 MedTech. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
